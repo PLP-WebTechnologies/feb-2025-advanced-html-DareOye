@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index Page</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 8px;
+            text-align: left;
+        }
+        form label {
+            display: block;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to my blog!</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>What we do</h2>
+            <ol type="I">
+                <li>Sells Musical instruments</li>
+                <li>Post latest songs</li>
+                <li>Audio</li>
+                <li>Video</li>
+                <li>also Train </li>
+            </ol>
+        </section>
+<!-- External photo link for pexels.com -->
+        <section>
+            <h2>A brass Saxophone</h2>
+            <img src="https://images.pexels.com/photos/28653605/pexels-photo-28653605/free-photo-of-elegant-saxophone-on-stand-in-dim-light.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="A Tenor Saxophone" width="500">
+        </section>
+        <section>
+            <h2>Breathe by Dunsin oyekan</h2>
+            <audio controls preload="auto" loop muted>
+                <source src="https://cdn.trendybeatz.com/audio/Dunsin-Oyekan-Breathe-(TrendyBeatz.com).mp3" type="audio/mpeg">
+            </audio>
+        </section>
+        <section>
+            <h2>Happy Birthday Piano Chord Progression</h2>
+            <video controls width="640" height="360">
+                <source src="images/Happy Birthday Piano Chords.MP4" type="video/mp4">
+                Your browser does not support the video element.
+            </video>
+        </section>
+
+        <section>
+            <h2>Contact Table</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Address</th>
+                        <th>Mobile</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Oluwole Peter</td>
+                        <td>11, Idera street, Lagos</td>
+                        <td>09046372863</td>
+                        <td>oluwolepeter@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Abraham Williams</td>
+                        <td>45 John str, Lagos</td>
+                        <td>08123456432</td>
+                        <td>Abramwil@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>David jimoh</td>
+                        <td>124 Ikorodu rd, Lagos</td>
+                        <td>09158732988</td>
+                        <td>davidjimoh988@yahoo.com</td>
+                    </tr>
+                    <tr>
+                        <td>Deborah wike</td>
+                        <td>23, Ariori street, Oshodi</td>
+                        <td>07028945673</td>
+                        <td>Debbywke@outlook.com</td>
+                    </tr>
+                    <tr>
+                        <td>Michael Adebisi</td>
+                        <td>Amiralty way, Lekki</td>
+                        <td>08023768934</td>
+                        <td>Michealade12@gmail.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Registration Form</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required minlength="8">
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob">
+
+                <label for="country">Country:</label>
+                <select id="country" name="country">
+                    <option value="">Select a country</option>
+                    <option value="us">United States</option>
+                    <option value="ca">Canada</option>
+                    <option value="uk">United Kingdom</option>
+                    <option value="au">Australia</option>
+                </select>
+
+                <label>Gender:</label>
+                <input type="radio" id="male" name="gender" value="male"> 
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label>
+
+                <label>Interests:</label>
+                <input type="checkbox" id="sports" name="interests" value="sports">
+                <label for="sports">Sports</label>
+                <input type="checkbox" id="music" name="interests" value="music">
+                <label for="music">Music</label>
+                <input type="checkbox" id="reading" name="interests" value="reading">
+                <label for="reading">Reading</label>
+
+                <button type="submit">Register</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Music is life</p>
+    </footer>
+
+</body>
+</html>
